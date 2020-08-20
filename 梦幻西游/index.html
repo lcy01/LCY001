@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>梦幻西游</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+        body{
+            background: url("img/bj.jpg")no-repeat;
+        }
+        .box{
+            width:1000px;
+            height:500px;
+            margin:50px auto;
+            position: relative;
+        }
+        /*.box .queen{
+            width:120px;
+            height:180px;
+            background: url("img/queen.png");
+            background-size: 100%;
+            position: absolute;
+            right:20px;
+            top:50px;
+            z-index: 99;
+            cursor: pointer;
+        }*/
+        .box .xiyouji{
+            width:100%;
+            height:100%;
+            position: absolute;
+            left:0;
+            top:0;
+            padding-top:260px;
+            box-sizing: border-box;
+        }
+        .box .xiyouji .div{
+            float: left;
+            cursor: pointer;
+            transition: transform .8s ease;
+        }
+        .box .xiyouji .div:hover{
+            transform:scale(1.3);
+        }
+        .box .xiyouji .div1{
+            width:200px;
+            height:180px;
+            background: url("img/sunwukong.png");
+            animation:walk1 1.4s steps(8) infinite;
+            margin-top:30px;
+            margin-left:30px;
+        }
+        @keyframes walk1{
+            from{
+                background-position: 0 0;
+            }
+            to{
+                background-position: -1600px 0;
+            }
+        }
+        .box .xiyouji .div2{
+            width:200px;
+            height:180px;
+            background: url("img/zhubajie.png");
+            animation:walk1 1.4s steps(8) infinite;
+            margin-top:30px;
+        }
+        .box .xiyouji .div3{
+            width:170px;
+            height:240px;
+            background: url("img/tangseng.png");
+            animation:walk3 1.4s steps(8) infinite;
+        }
+        @keyframes walk3{
+            from{
+                background-position: 0 0;
+            }
+            to{
+                background-position: -1360px 0;
+            }
+        }
+        .box .xiyouji .div4{
+            width:210px;
+            height:200px;
+            background: url("img/shaheshang.png");
+            animation:walk4 1.4s steps(8) infinite;
+            margin-top:30px;
+        }
+        @keyframes walk4{
+            from{
+                background-position: 0 0;
+            }
+            to{
+                background-position: -1680px 0;
+            }
+        }
+        /*.tips{
+            display: none;
+            z-index: 99;
+        }
+        .tips .tip1{
+            width:180px;
+            height:120px;
+            position: absolute;
+            right:110px;
+            top:30px;
+            background: url(img/tips.png);
+            padding:40px 35px;
+            font-size: 12px;
+            line-height: 20px;
+            box-sizing: border-box;
+        }
+        .tips .tip2{
+            width:180px;
+            height:120px;
+            position: absolute;
+            right:300px;
+            top:180px;
+            background: url(img/tips.png);
+            padding:40px 35px;
+            line-height: 20px;
+            font-size: 12px;
+            box-sizing: border-box;
+        }*/
+        /*.queen:hover+.xiyouji .tips{
+            display: block;
+        }
+        .queen:hover+.xiyouji .div1,.queen:hover+.xiyouji .div2,.queen:hover+.xiyouji .div3,.queen:hover+.xiyouji .div4{
+            animation-duration: 0.2s;
+        }*/
+    </style>
+</head>
+<body>
+    <div class="box">
+        <!--<div class="queen"></div>-->
+        <div class="xiyouji">
+            <div class="div1 div"></div>
+            <div class="div2 div"></div>
+            <div class="div3 div"></div>
+            <div class="div4 div"></div>
+            <!--<div class="tips">
+                <div class="tip1">御弟哥哥，别跑！</div>
+                <div class="tip2">徒儿们，快跑啊，救我！！！</div>
+            </div>-->
+        </div>
+    </div>
+</body>
+</html>
