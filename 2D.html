@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			li{
+				list-style: none;
+				width: 300px;
+				height: 200px;
+				background: red;
+				float: left;
+				margin-right: 100px;
+				margin-bottom: 50px;
+				transition: all 1s;
+			}
+			li:nth-child(1):hover{
+				transform: translate(50%,0px);
+			}
+			li:nth-child(2):hover{
+				transform: scale(-1.1,-0.8);
+			}
+			li:nth-child(3):hover{
+				transform: rotate(-180deg);
+			}
+			li:nth-child(4):hover{
+				transform: skew(45deg);
+			}
+		</style>
+	</head>
+	<body>
+		2D转换   
+		  移动  translate(x,y)     x正值  向右    y 正值   向下
+		                         值除了px外   还可以使用百分比  相对于自身的宽高
+		  
+		   缩放   scale(x,y);     x,y按自身比例缩放，可为负数，当为负数时，效果上有一个反转效果
+		   
+		   
+		   旋转   rotate()      180deg    deg就是角度的意思   正值顺时针旋转
+		   
+		   
+		   倾斜   skew()     45deg
+		<ul>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+		</ul>
+	</body>
+</html>
